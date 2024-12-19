@@ -1,0 +1,45 @@
+<div id="demande-dette-section" class="section">
+  <h1>Gestion des Demandes de Dette</h1>
+
+  <!-- Création de demande de dette -->
+  <div id="create">
+    <h2>Créer une Demande de Dette</h2>
+    <label for="client">Client :</label>
+    <select id="client-select">
+      <!-- Options des clients seront ajoutées dynamiquement -->
+    </select>
+
+    <label for="article-select">Sélectionner des articles :</label>
+    <div id="article-select" class="checkbox-list">
+      <!-- Les cases à cocher seront générées ici -->
+    </div>
+
+    <label for="date">Date :</label>
+    <input type="date" id="date" placeholder="Date de la demande" />
+
+    <label for="etat">État :</label>
+    <select id="etat">
+      <option value="0">Non réglée</option>
+      <option value="1">Réglée</option>
+    </select>
+
+    <button onclick="createDemandeDette()">Créer</button>
+  </div>
+
+  <!-- Liste des demandes de dette -->
+  <div id="list">
+    <h2>Liste des Demandes de Dette</h2>
+    <table id="demandes-dette-table">
+      <thead>
+        <tr>
+          <th>Client</th>
+          <th>Montant Total</th>
+          <th>Date</th>
+          <th>État</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+</div>

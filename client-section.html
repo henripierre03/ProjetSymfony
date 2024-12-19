@@ -1,0 +1,36 @@
+<div id="client-section" class="section">
+    <h1>Gestion des Clients</h1>
+    <!-- Création de client -->
+    <div id="create">
+        <h2>Créer un Client</h2>
+        <label for="surname">Nom :</label>
+        <input type="text" id="surname" placeholder="Nom du client">
+        <label for="telephone">Téléphone :</label>
+        <input type="text" id="telephone" placeholder="Numéro de téléphone">
+        <label for="address">Adresse :</label>
+        <input type="text" id="address" placeholder="Adresse">
+        <label for="user">Utilisateur :</label>
+        <select id="user">
+            <option value="">Aucun utilisateur</option>
+        </select>
+        <button onclick="createClient()">Créer</button>
+    </div>
+    
+
+    <!-- Liste des clients -->
+    <div id="list">
+        <h2>Liste des Clients</h2>
+        <table id="clients-table">
+            <thead>
+                <tr>
+                    <th>Nom</th>
+                    <th>Téléphone</th>
+                    <th>Adresse</th>
+                    <th>Montant dû</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+</div>

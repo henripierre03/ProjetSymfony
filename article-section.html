@@ -1,0 +1,31 @@
+<div id="article-section" class="section">
+    <h1>Gestion des Articles</h1>
+    
+    <!-- Création d'article -->
+    <div id="create">
+        <h2>Créer un Article</h2>
+        <label for="libelle">Libellé :</label>
+        <input type="text" id="libelle" placeholder="Libellé de l'article">
+        <label for="prix">Prix :</label>
+        <input type="number" id="prix" placeholder="Prix de l'article">
+        <label for="qteStock">Quantité en Stock :</label>
+        <input type="number" id="qteStock" placeholder="Quantité en stock">
+        <button onclick="createArticle()">Créer</button>
+    </div>
+
+    <!-- Liste des articles -->
+    <div id="list">
+        <h2>Liste des Articles</h2>
+        <table id="articles-table">
+            <thead>
+                <tr>
+                    <th>Libellé</th>
+                    <th>Prix</th>
+                    <th>Quantité en Stock</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+</div>
